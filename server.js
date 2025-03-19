@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 
 // Configuração do CORS
 const corsOptions = {
-  origin: "https://agendamento-frontend.vercel.app",
+  origin: "https://front-agenda-eta.vercel.app",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
 };
