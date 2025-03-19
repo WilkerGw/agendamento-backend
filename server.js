@@ -25,6 +25,11 @@ mongoose
   .then(() => console.log("Conectado ao MongoDB Atlas"))
   .catch((err) => console.error("Erro ao conectar ao MongoDB Atlas:", err));
 
+// Rota raiz
+app.get("/", (req, res) => {
+  res.send("Bem-vindo à API de Agendamento!");
+});
+
 // Rota para receber os dados do formulário
 app.post("/api/agendamento", async (req, res) => {
   const { nomeCompleto, whatsapp, data, hora } = req.body;
