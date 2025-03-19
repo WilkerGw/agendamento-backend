@@ -8,8 +8,14 @@ const Agendamento = require("./models/Agendamento");
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// Middleware
-app.use(cors());
+// Configuração do CORS
+const corsOptions = {
+  origin: "https://agendamento-frontend.vercel.app",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Conectar ao MongoDB Atlas
