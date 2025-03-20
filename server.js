@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 4000;
 
 // Configuração do CORS
 const corsOptions = {
-  origin: "https://site-vizz-2025-next-xixc.vercel.app",
+  origin: "https://site-vizz-2025-next.vercel.app",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
 };
